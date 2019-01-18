@@ -15,10 +15,4 @@ $mailcnt .= "Message: $message \n";
 
 //Enviando mensaje
 mail($sendto, $issue, $mailcnt);
-if (mail($sendto, $issue, $mailcnt)) {
-   echo "<p style='font-size:20px;'>El formulario se ha enviado correctamente</p>";
-} else {
-   echo "Ha habido un error al enviar el formulario, inténtalo de nuevo por favor";
-};
-
 ?>
